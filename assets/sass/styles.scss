@@ -22,7 +22,7 @@ body {
 }
 
 #wrapper {
-    position: relative;
+    // position: relative;
 }
 
 .container {
@@ -58,13 +58,16 @@ h2 {
 
 
 #header {
-    // position: fixed;
+    position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
     padding: 0 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 7.5rem;
     align-items: center;
+    background-color: #eee;
 }
 
 
@@ -73,6 +76,11 @@ h2 {
     
 }
 
+#main {
+    margin-top: 5rem;
+    
+    
+}
 
 .nav-link {
     padding-left: 4.5rem;

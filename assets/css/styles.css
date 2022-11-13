@@ -23,10 +23,6 @@ body {
   background-color: #eeeeee;
 }
 
-#wrapper {
-  position: relative;
-}
-
 .container {
   max-width: 90rem;
   margin: 0 auto;
@@ -51,24 +47,31 @@ h2 {
 }
 
 #header {
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   padding: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 7.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #eee;
 }
 
 #nav-bar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#main {
+  margin-top: 5rem;
 }
 
 .nav-link {
