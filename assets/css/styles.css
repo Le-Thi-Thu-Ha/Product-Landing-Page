@@ -94,6 +94,8 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13.33333px;
   padding: 5px;
+  max-width: 27.5rem;
+  width: 100%;
 }
 
 #form input[type=submit] {
@@ -104,6 +106,15 @@ h2 {
   margin: 1.5rem 0;
   background-color: #f1c40f;
   border: none;
+  max-width: 15rem;
+  width: 100%;
+  padding: 5px 0;
+  cursor: pointer;
+}
+#form input[type=submit]:hover {
+  background-color: orange;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
 }
 
 #Features {
@@ -175,6 +186,12 @@ h2 {
   padding: 1rem 2rem;
   font-family: Arial, Helvetica, sans-serif;
   border: 0;
+  cursor: pointer;
+}
+#Pricing button:hover {
+  background-color: orange;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
 }
 
 .pricing-products {
@@ -215,4 +232,90 @@ h2 {
 #footer p {
   font-size: 1.44rem;
   margin: 5px 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+  html, body, * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body {
+    font-size: 1.2rem;
+  }
+  .container {
+    max-width: 55rem;
+    margin: 0 auto;
+  }
+  #header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: inherit;
+  }
+  #nav-bar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: cover;
+  }
+  #nav-bar li {
+    padding-bottom: 5px;
+  }
+  .logo {
+    margin-top: 1rem;
+  }
+  #main {
+    margin-top: 12rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  .icon {
+    display: none;
+  }
+  #Pricing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pricing-products {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
+  html, body, * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #nav-bar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
