@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  text-rendering: optimizeSpeed;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  color: rgba(22, 24, 35, 1);
+  direction: ltr;
+  overscroll-behavior: contain;
+  -webkit-font-smoothing: antialiased;
+  background-color: #eeeeee;
+}
+
+#wrapper {
+    position: relative;
+}
+
+.container {
+    max-width: 90rem;
+    margin: 0 auto;
+   
+}
+
+
+
+ul, ol{
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+
+
+#header-img {
+    width: 30rem;
+    height: 3.5rem;
+    
+}
+
+
+#header {
+    // position: fixed;
+    top: 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 7.5rem;
+    align-items: center;
+}
+
+
+#nav-bar ul{ 
+    display: flex;
+    
+}
+
+
+.nav-link {
+    padding-left: 4.5rem;
+}
+
+
+#form {
+    text-align: center;
+}
+
+#form h2 {
+    margin-bottom: 2rem;
+}
+
+#form input[type='email'] {
+    border-color: #767676;
+    background-color: #ffffff;
+    border-style: inset;
+    border-width: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13.33333px;
+    padding: 5px;
+}
+
+#form input[type='submit'] {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      padding: 0 2rem;
+      margin: 1.5rem 0;
+      background-color: #f1c40f;
+      border: none;
+
+}
+
+#Features {
+    margin-top: 3rem;
+
+}
+
+
+.features-details {
+    display: flex;
+
+    margin-bottom: 3rem;
+    
+}
+
+.icon {
+    color: darkorange;
+    font-size: 4.8rem;
+    font-weight: 900;
+    line-height: 4.8rem;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.description {
+  flex: 3;
+}
+
+
+
+#How_It_Works {
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+#Pricing {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    h2{
+        padding: 1.5rem 0;
+        font-weight: 700;
+    }
+
+    li {
+        padding: 5px 0;
+    }
+
+    button {
+        margin: 1.5rem 0;
+        background-color: #f1c40f;
+        border-radius: 2px;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 0;
+
+    }
+}
+
+.pricing-products {
+
+    border-color: #000000;
+    align-items: center;
+    border-radius: 3px;
+    border-style: solid;
+    text-align: center;
+    margin: 1rem;
+    width: calc(100%/3);
+   
+}
+
+
+.pricing-head {
+
+    background-color:  #dddddd;
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+}
+
+
+
+#footer {
+    margin-top: 3rem;
+    background-color: #dddddd;
+    padding: 2rem;
+    text-align: right;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+            padding: 0 1rem;
+        }
+    }
+
+    p {
+        font-size: 1.44rem;
+        margin: 5px 0 0;
+    }
+}
+
+
+
